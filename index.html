@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kéo Búa Bao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>KÉO BÚA BAO</h1>
+
+  <div class="hands">
+    <div id="playerHand">✊</div>
+    <div id="computerHand">✊</div>
+  </div>
+
+  <div class="choices">
+    <p><b>Your Choice:</b></p>
+    <button onclick="play('Kéo')">✌️ Kéo</button>
+    <button onclick="play('Búa')">✊ Búa</button>
+    <button onclick="play('Bao')">✋ Bao</button>
+  </div>
+
+  <div class="bot-choice">
+    <p><b>Bot Choice:</b> <span id="botChoice">?</span></p>
+  </div>
+
+  <h2 id="result">~ Hãy chọn để bắt đầu! ~</h2>
+
+  <script src="script.js"></script>
+</body>
+</html>

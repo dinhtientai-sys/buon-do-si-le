@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .hands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 100px;
+  }
+  
+  .hands div {
+    margin: 0 50px;
+  }
+  
+  .choices {
+    margin: 20px 0;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background: #f0f0f0;
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

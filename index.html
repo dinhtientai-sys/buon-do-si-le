@@ -1,30 +1,121 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Kéo Búa Bao</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV - Đinh Tiến Tài</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>KÉO BÚA BAO</h1>
+  <div class="cv-wrap">
+    <!-- Header -->
+    <div class="cv-header">
+      <div class="header-left">
+        <img class="avatar" src="soucre.jpg"Ảnh Đinh Tiến Tài (đổi tên file thành profile.jpg)" />
+      </div>
+      <div class="header-right">
+        <h1 class="name">ĐINH TIẾN TÀI</h1>
+        <p class="role">UX/UI Designer</p>
 
-  <div class="hands">
-    <div id="playerHand">✊</div>
-    <div id="computerHand">✊</div>
+        <ul class="meta">
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM3 21a9 9 0 0 1 18 0H3z"/></svg> 12/06/2006</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg> 0933706673</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M3 8.5C3 6.01 5.01 4 7.5 4S12 6.01 12 8.5 9.99 13 7.5 13 3 10.99 3 8.5zM7.5 6A1.5 1.5 0 1 0 7.5 9 1.5 1.5 0 0 0 7.5 6zM21 20v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg> dinhtientai.lhu.24ct112@gmail.com</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5L12 2zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> 277B, KP 5B, P. Tân Biên, Biên Hòa - Đồng Nai</li>
+        </ul>
+
+        <div class="header-actions">
+          <button id="printBtn" class="btn">In / Xuất PDF</button>
+          <button id="toggleTheme" class="btn outline">Chuyển giao diện</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="cv-body">
+      <!-- left column -->
+      <aside class="left-col">
+        <section class="card">
+          <h3>Mục tiêu nghề nghiệp</h3>
+          <p>Gia nhập đội ngũ UX/UI Designer của Haravan để học hỏi, đóng góp các ý tưởng sáng tạo và phát triển bản thân thành một nhà thiết kế chuyên nghiệp, mang lại trải nghiệm người dùng tốt hơn qua từng sản phẩm.</p>
+        </section>
+
+        <section class="card">
+          <h3>Kỹ năng</h3>
+          <ul>
+            <li>UI Design (Figma, Adobe XD)</li>
+            <li>User Flow, Wireframe, Prototype</li>
+            <li>User Research (Survey, Interview)</li>
+            <li>Responsive & Mobile-first</li>
+            <li>HTML/CSS cơ bản</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Kỹ năng mềm</h3>
+          <ul>
+            <li>Làm việc nhóm & giao tiếp hiệu quả</li>
+            <li>Quản lý thời gian, tổ chức công việc</li>
+            <li>Tư duy sáng tạo & giải quyết vấn đề</li>
+            <li>Khả năng học hỏi nhanh</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Chứng chỉ</h3>
+          <ul>
+            <li>Google UX Design Certificate — Coursera (2024)</li>
+            <li>Chứng chỉ Thiết kế Giao diện với Figma — Udemy (2023)</li>
+            <li>Học bổng khuyến khích học tập (2023–2024)</li>
+          </ul>
+        </section>
+
+        <section class="card small">
+          <h3>Sở thích</h3>
+          <p>Thiết kế sáng tạo, đọc sách UX, du lịch, chụp ảnh, thể thao.</p>
+        </section>
+      </aside>
+
+      <!-- right column -->
+      <main class="right-col">
+        <section class="card">
+          <h3>Học vấn</h3>
+          <p class="muted">Đại học Công nghệ Thông tin – Đại học Lạc Hồng</p>
+          <p><strong>UX/UI Design</strong> | 09/2022 – 06/2026 • GPA: 8.3/10</p>
+        </section>
+
+        <section class="card">
+          <h3>Dự án - Thiết kế Ứng dụng Đặt lịch Khám bệnh Online</h3>
+          <p class="muted">03/2024 – 06/2024</p>
+          <ul>
+            <li>Vai trò: UX/UI Designer — khảo sát người dùng, xây dựng user flow & wireframe.</li>
+            <li>Thiết kế giao diện bằng Figma, áp dụng thiết kế tối giản và khả năng truy cập cao.</li>
+            <li><strong>Kết quả:</strong> Giao diện được đánh giá cao trong buổi thuyết trình cuối kỳ, đạt 9/10.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Kinh nghiệm & Hoạt động</h3>
+          <p class="muted">Thành viên CLB Thiết kế & Sáng tạo (UIT Design Club)</p>
+          <ul>
+            <li>Tham gia tổ chức workshop “UX Research thực chiến” cho sinh viên năm nhất (2024).</li>
+            <!-- placeholder nếu muốn thêm kinh nghiệm thực tế sau này --> 
+          </ul>
+        </section>
+
+        <section class="card contact-card">
+          <h3>Liên hệ nhanh</h3>
+          <p><strong>Điện thoại:</strong> 0933706673</p>
+          <p><strong>Email:</strong> dinhtientai.lhu.24ct112@gmail.com</p>
+          <p><strong>Địa chỉ:</strong> 277B/ Kp 5B, P. Tân Biên, Biên Hòa - Đồng Nai</p>
+        </section>
+      </main>
+    </div>
   </div>
-
-  <div class="choices">
-    <p><b>Your Choice:</b></p>
-    <button onclick="play('Kéo')">✌️ Kéo</button>
-    <button onclick="play('Búa')">✊ Búa</button>
-    <button onclick="play('Bao')">✋ Bao</button>
-  </div>
-
-  <div class="bot-choice">
-    <p><b>Bot Choice:</b> <span id="botChoice">?</span></p>
-  </div>
-
-  <h2 id="result">~ Hãy chọn để bắt đầu! ~</h2>
 
   <script src="script.js"></script>
 </body>

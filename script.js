@@ -1,30 +1,21 @@
-function play(playerChoice) {
-    const choices = ["Kéo", "Búa", "Bao"];
-    const emojis = { "Kéo": "✌️", "Búa": "✊", "Bao": "✋" };
+// script.js - small interactivity: print + toggle theme
+document.addEventListener('DOMContentLoaded', () => {
+    const printBtn = document.getElementById('printBtn');
+    const toggleTheme = document.getElementById('toggleTheme');
   
-    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    printBtn?.addEventListener('click', () => {
+      window.print();
+    });
   
-    // đổi tay theo emoji
-    document.getElementById("playerHand").textContent = emojis[playerChoice];
-    document.getElementById("computerHand").textContent = emojis[computerChoice];
+    toggleTheme?.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleTheme.textContent = document.body.classList.contains('dark') ? 'Giao diện sáng' : 'Chuyển giao diện';
+    });
   
-    // hiện lựa chọn bot
-    document.getElementById("botChoice").textContent = computerChoice;
-  
-    // xử lý kết quả
-    let result = "";
-    if (playerChoice === computerChoice) {
-      result = "~ DRAW! ~";
-    } else if (
-      (playerChoice === "Kéo" && computerChoice === "Bao") ||
-      (playerChoice === "Búa" && computerChoice === "Kéo") ||
-      (playerChoice === "Bao" && computerChoice === "Búa")
-    ) {
-      result = "~ YOU WIN 🎉 ~";
-    } else {
-      result = "~ YOU LOSE 😢 ~";
-    }
-  
-    document.getElementById("result").textContent = result;
-  }
+    // Accessibility: allow keyboard focus outline on buttons
+    document.querySelectorAll('.btn').forEach(b => {
+      b.addEventListener('focus', () => b.style.boxShadow = '0 4px 12px rgba(0,0,0,0.12)');
+      b.addEventListener('blur', () => b.style.boxShadow = 'none');
+    });
+  });
   
